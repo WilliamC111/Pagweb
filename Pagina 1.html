@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Noticias</title>
+    <style>
+        header {
+            width: 1200px;
+            height: 120px;
+            margin: 10px auto;
+            background-color: rgb(212, 59, 59);
+            position: relative;
+            border-radius: 15px;
+        }
+
+        nav {
+            width: 295px;
+            height: 450px;
+            margin: 2px 20px 1px 70px;
+            background-color: rgb(144, 150, 158);
+            position: relative;
+            border-radius: 15px;
+
+        }
+
+        article {
+            width: 590px;
+            height: 220px;
+            margin: -450px 0px 0px 375px;
+            background-color: rgb(144, 150, 158);
+            position: relative;
+            border-radius: 15px;
+
+        }
+
+        div {
+            width: 0px;
+            height: 0px;
+            position: relative;
+            margin: 460px 0px 0px 1px;
+        }
+
+        #div article {
+            width: 570px;
+            height: 220px;
+            margin: -740px 0px 0px 425px;
+            border-radius: 15px;
+        }
+        
+        aside {
+            width: 295px;
+            height: 450px;
+            margin: -255px 0px 0px 975px;
+            background-color: rgb(144, 150, 158);
+            position: relative;
+            border-radius: 15px;
+
+        }
+        a:hover {
+        color: rgb(91, 170, 216);
+        }
+
+        footer {
+            width: 1200px;
+            height: 120px;
+            margin: 20px auto;
+            background-color: #444;
+            position: relative;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body background="https://c8.alamy.com/compes/2cgeedh/periodicos-con-titulares-en-superficie-horizontal-fondo-de-
+periodico-antiguo-textura-de-paginas-de-noticias-
+envejecidas-collage-de-papel-negro-blanco-gris-vista-superior-2cgeedh.jpg">
+
+    <!--cabezote-->
+    <header>
+        <Font FACE="impact" size="8">
+            <h1>Global-News</h1>
+        </Font>
+    </header>
+    <!--navegacion-->
+    <nav>
+        <br>
+        <h1>Noticias internacionales</h1>
+        <a href="https://www.bbc.com/mundo/topics/c2lej05epw5t" target="_blank">BBC News</a><br><br>
+        <a href="https://www.europapress.es/internacional/" target="_blank">europa press</a><br><br>
+        <a href="https://www.nytimes.com/international/?action=click&region=Editions&pgtype=Homepage"
+            target="_blank">The New York Times</a><br><br>
+        <a href="https://cnnespanol.cnn.com/seccion/mundo/" target="_blank">CNN</a><br><br>
+        <a href="https://elpais.com/internacional/" target="_blank">EL PAIS</a><br><br>
+        <fieldset>
+            <legend>Si ya está registrado</legend>
+            <p>Usuario:<br><input type="text" name="nombre" size="25"></p>
+            <p>Contraseña:<br> <input type="password" name="password" minlength="5"></p>
+            <input type="submit" value="Enviar">
+            <br>
+        </fieldset>
+    </nav>
+
+    <article>
+        <a href="Pagina 2.html" target="_blank">
+            <p margin-left="2px" style="color:  rgb(158, 23, 23);">Bloqueo a RT Noticias</p>
+        </a>
+        <p>
+            <img src="
+                data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAllBMVEV2vB4AAAB3vBx1viBurRtnoRxYjBd5vx9lnRp6wh9DZxAAAAN3ux4AAQAAAAV6wx50th19yB96uSFxuB8uSApRehpwsx0hNgdclRl/xCAcLQVuqBwoPA4yShABAAtHbBBVgxUfKQo+YxUkNA4qOg1NfBgqRwUFFgA4URAxVA0JDgBGZhQ8XhQ9WRBnmRsTHwlFXBNWiBWCKIwGAAAEiElEQVR4nO2ba1PbOBSGdXEQRrIViU0ghRRYwi7bUNr+/z9X2bTDJbZ0NsSD1HkfvsCMJfnxkeyjC4wBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAYxjAxQaXi+dcJ6v/fiAPTe01Y/0CDEaQURh6Y4Gee6zcHr3+HeADn1cE5tbZWv6o3E9S/Q1RQHfMJ+GtRWcWk8ZItp6j/DfFeOpuo1bPzlfDSfLyhmsBQa91ozj9d2NDAH2kYaLTmmi9cBr2UaKg
+                Tf48UWlsz72MagdZ4tIqDx7AhXte2/NIudfRyYl3x53Bww74HEmjaEEXJ29g1LammBO82DDfxeZ+G2y5AV/uUfFMPjz+lgxheOfsCWV1fct00IUrpu7swMeQRSXKmInVEBamGJ/WLMiENq+vZTd9dk2X1rYullIpmeKz2zkv3MRTCKybc3xTFEOhzxcafP9VQxjrC4WMYOlf4cdvU+OjKNvzWxW6AGsOoxXsN+RvD37gN7Z1aRR4yuZd+iKEwNMM7NT5S8jY8tbRPwT/1+FDJ25CZilSY28HSBRhKY/8lle5mUUUaMmPvSaWrUg2NqE+IhqOvmswNmfrDDSVb/UczVKX2UlN/oRRu56xQQyGoX4vxpCZvQ2a3pMJrV6KhkZ6JZTpr62Yfd6rEXurDBMPdpgt2S03L8DzKM6y9dA+8SceQ840b/+BnbGiU+kpZRmrC3YUIltBLX8/MrXv8RirY8s0q2n4ehppvXf0Cc7z4RFzq1DyxM5SL4U53JC9zXkc+FdkY6jcvlDD8dNPSYngfF8zEcB+aMALDh2IdXYUq2vBp++nr+OS+eMMuhmEMptsv1jD4baqa+TIM9cvdu3Qa88R65ih3lYnh68V7kuKRU8n4ZWTY6C2bP7H0xMMbLLUnlJWh5if21/VC1LRl4EuXOMiTkyF/nXm7b4SUW/OrMLOPTCpyNlQXhJw0vJCOLUts7eVqyOyC8LbR/VJ3mTFkxt2kS4TMdUMYinkaSlF1X5Dk7mgYioX2UmHqax4/JtMThmI5eekrQ8/Mat2SxuK8TENphCdt/+rEHn62hr3lES1729r4Oe98DY2jbR3ymYi+UPM1lMyTCmpeyCrG7r6FscQU/MwOtVuAYUhtHghDsW34diXN6Ewqa0NWf0krNt1XMfKuydzwIm3YfzbHN7kzNzSEE0O6C+JmfNE0b0PB7A0te7uyzAzPFTM3NLIiHE/s54o1G/4u5m3IvLR3tCB2c8XB92nehqHjmdUZIYhPc8USYxiQ3V4+IYx8MXwgI39DZo+68+yEE+2zwSoKMJT1fUsIoR5JUAswDE3rz5TcZniuOL0hmxF2OnXEMKQ2j5R/S+Ddso3fiSNlnqnfF0PaDOF7bMHFPZDq4Pxc7bxP6x+kko/7Gxrpx4/zPBO9xNM2YaSZ+4EE1Z+m2heScoujpQ1LPh6jRHQaK2vSJkzI8gZuVBDajz9gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAx/ATKZZfBffr2RkAAAAASUVORK5CYII="
+                width="50" height="50" align="left">Debido al bloqueo de RT noticias en Alemania,El gobierno de Vladimir
+            Putín
+            advirtio que bloquearia la plataforma Youtube.
+        </p><br>
+
+        <a href="Pagina 3.html" target="_blank">
+            <p margin-left="2px" style="color:  rgb(158, 23, 23);">Tensión entre Corea del Norte y EE.UU.</p>
+        </a>
+        </p>
+        <p>
+            <img src="https://s.france24.com/media/display/51d153cc-e7d5-11e9-9acc-005056bff430/w:1280/p:16x9/web_portada_eeuu_corea_del_norte.webp"
+                width="50" height="50" align="left">
+            El lider norcoreano Kim Jong-Un rechaza el dialogo con EE.UU. por la "política hostil" del gobierdo de
+            Biden.
+        </p>
+    </article>
+    <div>
+
+        <article>
+            <p style="color: blue;">Noticias nacionales</p>
+            <a href="Pagina 4.html" target="_blank">
+                <p margin-left="2px" style="color:  rgb(158, 23, 23);"">Protesta Social</p></a>
+        </p>
+        <p>
+        <img src=" https://aristeguinoticias.com/editorial/wp-content/uploads/2021/05/Protestas-Colombia-Policia-Manifestantes-Ivan-Duque-060521-1.jpg"
+                    width="60" height="40" align="left">
+                    El descontento de un gran número de Colombianos contra el gobierno del actual presidente, continua
+                    en las calles;aunque las movilizaciones se realicen con menor intensidad.
+                </p>
+                <a href="Pagina 5.html" target="_blank">
+                    <p margin-left="2px" style="color:  rgb(158, 23, 23);">Continúa la crisis migratoria</p></a>
+            </p>
+            <p>
+            <img src="https://s.france24.com/media/display/c20e91e4-f6de-11eb-97eb-005056a90284/7d84d1f957c9fd52acce5901d6719db7cad1529b.jpg"
+                        width="60" height="40" align="left">
+                        Los migrantes Venezolanos siguen llegando al territorio Colombiano, para establecerse o utilizarlo como escala a otros paises.
+                    </p>
+
+        </article>
+    </div>
+    <aside>
+       <p align="center" border="radio"> <iframe src="https://www.eitb.eus/es/noticias/internacional/" width="270" height="425" scrolling="auto">
+        </iframe> </p>
+    </aside>
+    <footer>
+        <a src="https://actualidad.rt.com/acerca/contactos" target="_blank"><p align="center" style="color: blanchedalmond;">Contactos </p></a>
+        <p align="center" style="color: blanchedalmond;">Teléfono: 01-800-0518865</p>
+        <p align="center" style="color: blanchedalmond;">Dirección: Calle 20 N° 9-90, Bogotá</p>
+
+    </footer>
+
+</body>
+
+</html>
